@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Testimonios";
+}
+
+<body style="background: white;">
+    <!----- TITLE: Citas ----->
+    <div class="text-center">
+        <h1 class="main-title">Testimonios</h1>
+        <img src="~/img/icon-doc.png"/>
+    </div>
+
+    <br /><br />
+
+    <!----- CARD: Testimonios Destacados ----->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="~/img/imgTest1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Armando</h5>
+                                <p class="card-text">Logré bajar 20 kilos en menos tiempo del que esperaba. Cambié mis hábitos totalmente, tanto que ahora soy un deportista y mi energía siempre está al máximo.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="~/img/imgTest2.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Axel</h5>
+                                <p class="card-text">Excelente nutrióloga, se adaptó a todos mis gustos y no me costó nada hacer la dieta.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <!----- CARD: Testimonios Generales ----->
+    <div class="container">
+        <div class="row justify-content-center d-flex">
+            <h3 class="text-center text-subtitle">Testimonios Generales</h3>
+            <br /><br />
+            <div class="col-3">
+                <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Nombre</div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Nombre</div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Nombre</div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Nombre</div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----- FORM: Subir Testimonios ----->
+    <div class="container">
+        <form method="post" action="/Testimonios/AgregarTestimonio">
+            <div class="mb-3">
+                <label for="nombre" class="form-label text-warning"><b>Nombre:</b></label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" name="NombrePersona">
+            </div>
+            <div class="mb-3">
+                <label for="test" class="form-label text-warning"><b>Comparte tu Testimonio:</b></label>
+                <textarea class="form-control" id="test" rows="5" placeholder="Comenta aquí..." name="ContenidoTestimonio"></textarea>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-warning">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>

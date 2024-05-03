@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Citas";
+}
+
+<body style="background-color: white">
+    <!----- TITLE: Citas ----->
+    <div class="text-center">
+        <h1 class="main-title">Citas</h1>
+        <img src="~/img/icon-calendar.png"/>
+    </div>
+
+    <br /><br />
+
+    <!----- CARD: Agendar Cita ----->
+    <div class="container border-icons mt-5 mb-5">
+        <div class="row text-center justify-content-center align-items-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <img class="img-mainpage" src="~/img/imgAgendaCita.png" alt="Agendar Cita">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <h1 class="main-title inter" style="font-size: 30px; color: black;">Agendar Online</h1>
+            </div>
+            <div class="col-12 col-md-5 mb-3">
+                <p>Agenda tu cita vía remota.</p>
+            </div>
+            <div class="col-12 col-md-1">
+                <button type="button" class="btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <img src="~/img/icon-whatsapp.png" alt="WhatsApp Icon" />
+                    <b>Clic Aquí</b>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <br /><br />
+
+    <!----- TITLE: Agendar Presencial ----->
+    <div class="container">
+        <h1 class="main-title">Agendar Presencial</h1>
+    </div>
+
+    <br /><br />
+
+    <!----- FORM: Registro Presencial ----->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        Ingresa tus datos:
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="/Citas/AgregarCita">
+                            <div class="form-group">
+                                <label for="Nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Ingrese su nombre">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo:</label>
+                                <input type="email" class="form-control" id="correo" name="Correo" placeholder="Ingrese su correo electrónico">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha">Fecha:</label>
+                                <input type="date" class="form-control" id="fecha" name="Fecha">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="hora">Hora:</label>
+                                <input type="time" class="form-control" id="hora" name="Hora">
+
+
+                            </div>
+                            <br />
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-warning">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----- MODAL: Botón Agendar Cita ----->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">Escanea el código</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="text-center justify-content-center" src="~/img/qrwhats.png"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

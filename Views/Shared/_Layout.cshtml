@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NutridemApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NutridemApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-B8x8Uq4byw+FOh8sPHImeV14gHjegJZ3S94I6pxc0VbCkhoTUzhUiHinFVrUEW8cKT4QT4x82GaMVS3bAOjhlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--GOOGLE MAPS API-->
+
+    <title>Simple Marker</title>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALHUijJq8-SiLftzmqaKDKdXHh1n0geL0&callback=console.debug&libraries=maps,marker&v=beta"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="homepage">
+
+    <!--NAVBAR-->
+    <header>
+        <nav class="navbar navbar-expand navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="size-footer-img" src="~/img/nutridem.png" /></a>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #F1A32D;" asp-area="" asp-controller="Citas" asp-action="Citas">
+                                <img src="~/img/icon-calendar.png" alt="Citas Icon" class="nav-icon size-nav-icon">
+                                Citas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #F1A32D;" asp-area="" asp-controller="Testimonios" asp-action="Testimonios">
+                                <img src="~/img/icon-doc.png" alt="Testimonios Icon" class="nav-icon size-nav-icon">
+                                Testimonios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #F1A32D;" asp-area="" asp-controller="Informacion" asp-action="Informacion">
+                                <img src="~/img/icon-info.png" alt="Información Icon" class="nav-icon size-nav-icon">
+                                Información
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer footer-color text-muted">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img class="size-footer-img" src="~/img/nutridem.png" />
+            <p class="text-center mb-0">NUTRIDEM 2024. &copy; All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

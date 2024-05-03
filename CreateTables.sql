@@ -1,0 +1,14 @@
+CREATE TABLE Citas (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(255) NOT NULL,
+	Correo NVARCHAR(255) NOT NULL,
+    Fecha DATE NOT NULL,
+    Hora TIME NOT NULL
+);
+
+
+CREATE TABLE Testimonios (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    NombrePersona NVARCHAR(255) NOT NULL,
+    ContenidoTestimonio NVARCHAR(MAX) NOT NULL
+);

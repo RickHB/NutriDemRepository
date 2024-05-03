@@ -1,0 +1,132 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*----- BODY STYLES -----*/
+
+body {
+  margin-bottom: 60px;
+}
+
+body.homepage {
+    background-color: #FEFAF5;
+}
+
+.border-icons {
+    border: 2px solid #F1A32D;
+    border-radius: 10px;
+}
+
+.main-title {
+    font-weight: bold;
+    color: #F1A32D;
+    font-size: 40px;
+}
+
+.secondary-title {
+    font-weight: bold;
+    color: #F1A32D;
+    font-size: 20px;
+}
+
+.orange-line {
+    width: 2px;
+    height: 100px;
+    background-color: #F1A32D;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-shadow-carousel {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.text-subtitle {
+    font-style: italic;
+    color: #F1A32D;
+}
+
+/*----- NAVBAR STYLES -----*/
+
+.size-nav-img {
+    height: 91px;
+    width: 214px;
+}
+
+.size-nav-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.navbar-elements {
+    font-weight: bold;
+    color: #F1A32D;
+    margin-left: auto;
+}
+
+/*----- FOOTER STYLES -----*/
+
+.footer-color{
+    background-color: #F1EEEE;
+}
+
+.size-footer-img {
+    height: 60px;
+    width: 132px;
+}
+
+/*----- IMAGES STYLES -----*/
+
+.img-options{
+    height:auto;
+    width:auto;
+}
+
+.img-mainpage {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/*----- GOOGLE FONTS -----*/
+
+.abeezee-regular {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title-abeezee {
+    color: #F1A32D;
+    font-size: 18px;
+}
+
+.inter-<uniquifier > {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+/*----- ELEMENTS -----*/
+
+.accordion-button:focus {
+    background-color: #F1A32D;
+}
+
+.accordion-button:active{
+    color:white;
+}

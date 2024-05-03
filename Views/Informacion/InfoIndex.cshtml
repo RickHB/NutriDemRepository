@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Informacion";
+}
+
+<div class="container">
+    <div class="row">
+        <!----- IMG: Maps ----->
+        <div class="col-md-6">
+            <gmp-map center="19.28636360168457,-99.64877319335938" zoom="14" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker position="19.28636360168457,-99.64877319335938" title="My location"></gmp-advanced-marker>
+            </gmp-map>
+        </div>
+        <div class="col-md-6">
+
+            <!----- TITLE: Información ----->
+            <div class="text-center">
+                <h1 class="main-title">Información</h1>
+                <img src="~/img/icon-info.png">
+            </div>
+            <br />
+
+            <!----- TITLE: Misión ----->
+            <div>
+                <h1 class="secondary-title">Misión</h1>
+                <p class="text-justify">Proporcionar servicios de nutrición y aparatología estética de alta calidad, personalizados y basados en la evidencia, para ayudar a nuestros clientes a alcanzar sus objetivos de salud y belleza de manera integral y sostenible.</p>
+            </div>
+            <br />
+
+            <!----- TITLE: Visión ----->
+            <div>
+                <h1 class="secondary-title">Visión</h1>
+                <p class="text-justify">Convertirnos en el referente líder en nutrición y aparatología estética, reconocidos por nuestra excelencia en el servicio al cliente, la innovación en tratamientos y la promoción de un estilo de vida saludable.</p>
+            </div>
+             <br />
+
+            <!----- TITLE: Valores ----->
+            <div>
+                <h1 class="secondary-title">Valores</h1>
+                <ul class="text-justify">
+                    <li>Compromiso con la excelencia: Nos esforzamos por ofrecer servicios de la más alta calidad, respaldados por la última investigación y tecnología.</li>
+                    <li>Integridad: Actuamos con honestidad, transparencia y ética en todas nuestras interacciones.</li>
+                    <li>Empatía: Nos preocupamos por las necesidades individuales de cada cliente y los apoyamos en su viaje hacia el bienestar.</li>
+                    <li>Profesionalismo: Nuestro equipo está formado por profesionales altamente capacitados y comprometidos con la mejora continua.</li>
+                    <li>Responsabilidad social y ambiental: Nos comprometemos a operar de manera sostenible, minimizando nuestro impacto en el medio ambiente y contribuyendo positivamente a la comunidad.</li>
+                </ul>
+            </div>
+            <br />
+
+            <!----- BUTTONS: Social Media ----->
+            <div class="text-center justify-content-center">
+                <a href="https://www.facebook.com/profile.php?id=100063619597810"><img src="~/img/ic_facebook.png" /></a>
+                <a href="https://www.instagram.com/nutri_dem/"><img src="~/img/ic_instagram.png" /></a>
+                <a asp-action="Citas" asp-controller="Citas"><img src="~/img/ic_whatsapp.png" /></a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
